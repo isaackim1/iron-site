@@ -1,12 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Iron: Bible reading and prayer for your small group</title>
-<meta name="description" content="Iron is a calm, leader-led Bible reading and prayer app for existing Christian small groups.">
+<meta name="description" content="Iron is a calm Android app for Christian small groups that already meet. A leader sets the week's chapters and one prayer point; everyone reads and prays together.">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.className = "js";</script>
+<script src="assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -27,59 +29,147 @@
   </div>
 </header>
 
+<!-- Tab icons in the phone illustration are drawn after Feather (MIT licence), the icon set the app uses. -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></symbol>
+  <symbol id="i-feed" viewBox="0 0 24 24"><path d="M17 10H3M21 6H3M21 14H3M17 18H3"/></symbol>
+  <symbol id="i-reflect" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-group" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-manage" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></symbol>
+</svg>
+
 <main id="main">
 
-  <section class="hero" aria-labelledby="hero-title">
+  <section class="b-hero" aria-labelledby="hero-title">
     <div class="wrap">
-      <div class="rise">
-        <h1 id="hero-title">A quiet room for your group and the Word.</h1>
-        <p class="lede">Iron helps an existing Christian small group read the Bible, pray and reflect together, one leader-set week at a time.</p>
-        <div class="pill-row">
-          <a class="pill" href="#get-iron">Coming to Google Play</a>
+      <p class="b-status">Android<span aria-hidden="true"> · </span><span class="sr-only">. </span>Not on Google Play yet</p>
+      <h1 id="hero-title">Read the Bible and pray together, <span class="hl">one week at a time</span>.</h1>
+      <p class="lede">Iron is a calm app for Christian small groups that already meet. Each week, a leader chooses the chapters and one prayer point. Members read on the same days and pray for the same thing.</p>
+      <a class="pill" href="#how">See how a week works</a>
+    </div>
+  </section>
+
+  <section class="story" id="how" aria-labelledby="how-title">
+    <h2 id="how-title" class="sr-only">How a week works</h2>
+    <div class="story-grid">
+
+      <figure class="phone-figure">
+        <div class="phone">
+          <div class="phone-viewport">
+            <div class="screens" tabindex="0" aria-label="Three illustrated Iron screens. Scroll sideways to see each one.">
+
+              <div class="screen screen--plan is-active" id="screen-plan" role="img" aria-label="Illustration of Iron's Manage screen: reading days on Monday, Wednesday and Friday, with Psalms 121, 122 and 123, and one community prayer point.">
+                <div class="a-status"><span>8:00</span><span class="a-status-icons"></span></div>
+                <div class="a-page">
+                  <p class="a-title28">manage</p>
+                  <p class="a-cap">Thursday group · week of 5–11 Oct</p>
+                  <p class="a-title16">this week’s chapters</p>
+                  <div class="a-days">
+                    <span class="on" style="--i:0">M</span><span>T</span><span class="on" style="--i:1">W</span><span>T</span><span class="on" style="--i:2">F</span><span>S</span><span>S</span>
+                  </div>
+                  <p class="a-cap a-center">tap a day to add or rest it</p>
+                  <div class="a-card a-rows">
+                    <div class="a-row" style="--i:0"><span class="a-cap">Mon 5</span><span class="a-ref16">Psalms 121</span><span class="a-cap">›</span><svg class="a-eye"><use href="#i-eye"/></svg></div>
+                    <div class="a-row" style="--i:1"><span class="a-cap">Wed 7</span><span class="a-ref16">Psalms 122</span><span class="a-cap">›</span><svg class="a-eye"><use href="#i-eye"/></svg></div>
+                    <div class="a-row" style="--i:2"><span class="a-cap">Fri 9</span><span class="a-ref16">Psalms 123</span><span class="a-cap">›</span><svg class="a-eye"><use href="#i-eye"/></svg></div>
+                  </div>
+                  <p class="a-cap a-center a-gap10">Auto-fill chapters in order ›</p>
+                  <p class="a-title16">community prayer point</p>
+                  <div class="a-card a-input">For rest and courage this week, and for each other as we read the Psalms together.</div>
+                  <p class="a-cap a-sharing">prayer point sharing</p>
+                  <div class="a-pills"><span class="a-pill a-pill--yellow">Group only</span><span class="a-pill a-pill--white">Shareable</span></div>
+                  <p class="a-title16">announcement</p>
+                  <div class="a-card a-input a-placeholder">Anything your group should know (optional)</div>
+                </div>
+                <div class="a-tabbar">
+                  <span><svg><use href="#i-home"/></svg>Home</span><span><svg><use href="#i-feed"/></svg>Feed</span><span><svg><use href="#i-reflect"/></svg>Reflect</span><span class="on"><svg><use href="#i-manage"/></svg>Manage</span>
+                </div>
+              </div>
+
+              <div class="screen screen--read" id="screen-read" role="img" aria-label="Illustration of Iron's reading screen: Psalms 121 from the World English Bible, one verse highlighted, with Reflect and Amen buttons.">
+                <div class="a-status"><span>8:00</span><span class="a-status-icons"></span></div>
+                <div class="a-sheet">
+                  <div class="a-sheet-top"><span class="a-back">‹</span><span class="a-label">today’s chapter</span></div>
+                  <p class="a-ref30">Psalms 121</p>
+                  <p class="a-cap11">1 highlighted · tap one again to remove</p>
+                  <p class="a-scripture"><span><span class="a-vn"> 1 </span>I will lift up my eyes to the hills. Where does my help come from?</span><span class="a-hl"><span class="a-vn"> 2 </span>My help comes from the LORD, who made heaven and earth.</span><span><span class="a-vn"> 3 </span>He will not allow your foot to be moved. He who keeps you will not slumber.</span><span><span class="a-vn"> 4 </span>Behold, he who keeps Israel will neither slumber nor sleep.</span><span><span class="a-vn"> 5 </span>The LORD is your keeper. The LORD is your shade on your right hand.</span><span><span class="a-vn"> 6 </span>The sun will not harm you by day, nor the moon by night.</span><span><span class="a-vn"> 7 </span>The LORD will keep you from all evil. He will keep your soul.</span><span><span class="a-vn"> 8 </span>The LORD will keep your going out and your coming in, from this time forward, and forever more.</span></p>
+                  <p class="a-attr">World English Bible · public domain</p>
+                  <div class="a-actions"><span class="a-pill a-pill--dark">Reflect</span><span class="a-pill a-pill--yellow">Amen</span></div>
+                </div>
+              </div>
+
+              <div class="screen screen--pray" id="screen-pray" role="img" aria-label="Illustration of Iron's home screen: the community prayer card, and today's chapter, Psalms 121, marked Amen.">
+                <div class="a-status"><span>8:00</span><span class="a-status-icons"></span></div>
+                <div class="a-page">
+                  <div class="a-header"><span class="a-hi">hi, Sam</span><span class="a-avatar">S</span></div>
+                  <div class="a-week">
+                    <span><b>Sun</b><i>4</i><em></em></span>
+                    <span class="today"><b>Mon</b><i>5</i><em></em></span>
+                    <span><b>Tue</b><i>6</i><em></em></span>
+                    <span class="sched"><b>Wed</b><i>7</i><em></em></span>
+                    <span><b>Thu</b><i>8</i><em></em></span>
+                    <span class="sched"><b>Fri</b><i>9</i><em></em></span>
+                    <span><b>Sat</b><i>10</i><em></em></span>
+                  </div>
+                  <div class="a-prayer">
+                    <p class="a-prayer-h">community prayer card</p>
+                    <p class="a-prayer-x">For rest and courage this week, and for each other as we read the Psalms together.</p>
+                    <span class="a-pill a-pill--yellow">More</span>
+                  </div>
+                  <div class="a-card a-today">
+                    <p class="a-label">today’s chapter</p>
+                    <p class="a-ref32">Psalms 121</p>
+                    <p class="a-cap a-done">Amen ✓</p>
+                    <span class="a-pill a-pill--yellow">Read</span>
+                  </div>
+                  <p class="a-cap a-center a-gap12">Monday · 5</p>
+                </div>
+                <div class="a-tabbar">
+                  <span class="on"><svg><use href="#i-home"/></svg>Home</span><span><svg><use href="#i-feed"/></svg>Feed</span><span><svg><use href="#i-reflect"/></svg>Reflect</span><span><svg><use href="#i-group"/></svg>Group</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
-      </div>
-      <figure class="quote-card rise rise--late" aria-label="Iron">
-        <img src="assets/logo.png" alt="" width="357" height="900">
-        <blockquote>As iron sharpens iron,<br>so one person sharpens another.</blockquote>
+        <div class="story-tabs" aria-label="Steps" hidden>
+          <button type="button" data-step="plan"><span aria-hidden="true">1</span>Plan</button>
+          <button type="button" data-step="read"><span aria-hidden="true">2</span>Read</button>
+          <button type="button" data-step="pray"><span aria-hidden="true">3</span>Pray</button>
+        </div>
+        <figcaption>An illustration made from Iron’s current design, with example content. Not a screenshot.</figcaption>
       </figure>
+
+      <article class="step step--plan" id="step-plan" data-step="plan">
+        <p class="step-num" aria-hidden="true">1</p>
+        <h3>The leader plans the week</h3>
+        <p>Pick the reading days and a chapter for each one. Add one prayer point for the group. Then publish the week.</p>
+      </article>
+
+      <article class="step step--read" id="step-read" data-step="read">
+        <p class="step-num" aria-hidden="true">2</p>
+        <h3>Everyone reads the same chapter</h3>
+        <p>On each reading day, members open the chapter and read. Then they say Amen or write a reflection. A reflection stays private unless they share it with the group.</p>
+      </article>
+
+      <article class="step step--pray" id="step-pray" data-step="pray">
+        <p class="step-num" aria-hidden="true">3</p>
+        <h3>The group prays for one thing</h3>
+        <p>The week’s prayer point sits on everyone’s home screen. The whole group prays for the same thing.</p>
+      </article>
+
     </div>
+    <p class="story-note reveal">An optional daily reminder, set on your phone at the time you choose, lets you know the reading is ready.</p>
   </section>
 
-  <section class="section" aria-labelledby="week-title">
+  <section class="section" aria-labelledby="leave-title">
     <div class="wrap">
-      <h2 id="week-title">How a week works</h2>
-      <p class="section-intro">The leader sets the rhythm. Members take part without being scored, compared or pressured.</p>
-      <div class="roles">
-        <div class="role">
-          <h3>For the leader</h3>
-          <ol>
-            <li><span>Create a group and share its invite code with people you know.</span></li>
-            <li><span>Choose the reading days and a Bible chapter for each one.</span></li>
-            <li><span>Add one prayer point for the group, then publish the week.</span></li>
-            <li><span>Approve each request to join before they can see the group.</span></li>
-          </ol>
-        </div>
-        <div class="role">
-          <h3>For members</h3>
-          <ol>
-            <li><span>Enter the invite code and wait for the leader to approve you.</span></li>
-            <li><span>Read the assigned passage on each reading day.</span></li>
-            <li><span>Respond with Amen, or write a reflection.</span></li>
-            <li><span>Keep the reflection private, or share it with your group.</span></li>
-          </ol>
-        </div>
-      </div>
-      <p class="section-intro" style="margin:28px 0 0">An optional daily reminder, set on your phone at the time you choose, lets you know the reading is ready.</p>
-    </div>
-  </section>
-
-  <section class="section leave-out" aria-labelledby="leave-title">
-    <div class="wrap">
-      <div>
+      <div class="section-head reveal">
         <h2 id="leave-title">What Iron leaves out</h2>
         <p>Iron is for a group that already exists. It is not a social network, a public Bible platform or a way to measure anyone.</p>
       </div>
-      <ul class="chips" aria-label="Not in Iron">
+      <ul class="chips reveal" aria-label="Not in Iron">
         <li>Public profiles</li>
         <li>Discovery or search for groups</li>
         <li>Likes and comments</li>
@@ -94,7 +184,7 @@
 
   <section class="section" aria-labelledby="privacy-title">
     <div class="wrap">
-      <div class="brief">
+      <div class="brief reveal">
         <div>
           <h2 id="privacy-title">Privacy in brief</h2>
           <p>Reflections and prayer can reveal what you believe, so Iron treats them as sensitive. Iron is for adults aged 18 or older.</p>
@@ -120,22 +210,46 @@
     </div>
   </section>
 
+  <section class="section" id="get-iron" aria-labelledby="get-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 id="get-title">Get Iron</h2>
+      </div>
+      <dl class="facts reveal">
+        <div>
+          <dt>Android</dt>
+          <dd>Iron is for Android phones. It is not available on Google Play yet.</dd>
+        </div>
+        <div>
+          <dt>Bible text</dt>
+          <dd>Iron is in English. Its Bible text is the World English Bible, which is in the public domain.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
   <section class="section" id="support" aria-labelledby="support-title">
-    <div class="wrap support">
-      <h2 id="support-title">Support</h2>
-      <p>For help with Iron, privacy questions or data requests, email <a href="mailto:iron.support.business@gmail.com">iron.support.business@gmail.com</a>. Please write from the address you use to sign in, so we can find your account.</p>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 id="support-title">Support</h2>
+      </div>
+      <div class="support">
+        <p>For help with Iron, privacy questions or data requests, email <a href="mailto:iron.support.business@gmail.com">iron.support.business@gmail.com</a>. Please write from the address you use to sign in, so we can find your account.</p>
 
-      <h3>Report a concern</h3>
-      <p>To report content or a person in your group, use Report in the app. Iron's operator reviews reports. For immediate danger, contact local emergency services.</p>
+        <h3>Report a concern</h3>
+        <p>To report content or a person in your group, use Report in the app. Iron's operator reviews reports. For immediate danger, contact local emergency services.</p>
 
-      <h3>Delete your account</h3>
-      <p>You can ask for your account and data to be deleted at any time. <a href="delete-account.html">See how account deletion works</a>.</p>
+        <h3>Delete your account</h3>
+        <p>You can ask for your account and data to be deleted at any time. <a href="delete-account.html">See how account deletion works</a>.</p>
+      </div>
+    </div>
+  </section>
 
-      <h3 id="get-iron">Get Iron</h3>
-      <p>Iron is for Android phones. It is not available on Google Play yet.</p>
-
-      <h3>Bible text</h3>
-      <p>Iron is in English. Its Bible text is the World English Bible, which is in the public domain.</p>
+  <section class="closing" aria-label="Why Iron">
+    <div class="wrap">
+      <figure class="reveal">
+        <blockquote>As iron sharpens iron,<br>so one person sharpens another.</blockquote>
+      </figure>
     </div>
   </section>
 
