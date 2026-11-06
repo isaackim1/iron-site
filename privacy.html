@@ -30,7 +30,7 @@
 <main id="main">
   <div class="wrap doc-header">
     <h1>Privacy policy</h1>
-    <p class="doc-meta">Effective date: 2026-10-06. This version replaces the version effective 2026-09-29.</p>
+    <p class="doc-meta">Effective date: 2026-11-06. This version replaces the version effective 2026-10-06.</p>
   </div>
 
   <div class="wrap doc">
@@ -74,7 +74,7 @@
       <section id="collect">
         <h2>What we collect</h2>
         <ul>
-          <li><strong>Login and account data:</strong> email address, display name, language, and the times your account was created and your consent was recorded.</li>
+          <li><strong>Login and account data:</strong> email address, display name, language, and the times your account was created, your consent was recorded and, if you withdraw it, your consent was withdrawn.</li>
           <li><strong>Community rules acceptance:</strong> your account identifier, the version of the rules and when you accepted them.</li>
           <li><strong>Reports you choose to send:</strong> your account, the group, the identifier of the reported item or person, the reason you selected, the time and the handling status. Prayer and reflection text is not copied into a report.</li>
           <li><strong>Group data:</strong> group membership, role, join requests, the reading schedule and leader actions.</li>
@@ -83,7 +83,7 @@
           <li><strong>Minimal technical and security data</strong> needed to run and protect the service, such as app version, error category and the times of administrative events.</li>
         </ul>
         <p>Iron does not ask for your legal name, phone number, home address, exact date of birth, gender, contacts, location, camera, microphone, photos or files.</p>
-        <p>Iron does not include an advertising, analytics or crash-reporting service.</p>
+        <p>Iron does not include advertising software, and it has no analytics or crash-reporting library of its own. Each time the app opens, its update library, provided by Expo, checks for an app update (see Service providers). That check includes technical information about the app and a random identifier stored for this installation of the app. After a failed start, a check can also include the identifiers of updates that failed to launch and up to 1,024 characters of recorded technical error text. Expo processes this for Iron and can show the operator update statistics, such as how many installations opened a version and how many starts failed. Iron does not add your account, group, prayer or reflection content to these checks. We have not verified whether error text could incidentally include other information.</p>
       </section>
 
       <section id="use">
@@ -107,7 +107,7 @@
       <section id="joining">
         <h2>Joining and prayer points</h2>
         <p>An invite code creates a request to join. A leader must approve it before you can see any group content, including the group's name.</p>
-        <p>If you leave a group or are removed, your access ends immediately. Your shared reflections disappear from the group and stay with you as private reflections.</p>
+        <p>If you leave a group or are removed, your access ends immediately. Your shared reflections disappear from the group and stay with you as private reflections. If you rejoin that group and a leader approves you again, the reflections you had shared there become visible to it again, except any you have since made private or a leader has hidden.</p>
         <p>If a group is closed, its shared space, prayer point, schedule, Amens and invite codes are removed. Each author keeps their own reflections privately.</p>
         <p>A prayer point can be marked "Group only" or "Shareable outside the group". You may share details about yourself. Do not identify another person without their permission; if you are unsure, keep the wording anonymous. Once something is shared outside Iron, Iron cannot control that copy.</p>
       </section>
@@ -152,8 +152,8 @@
               </tr>
               <tr>
                 <th scope="row">Expo (EAS)</th>
-                <td>Builds the app and checks for app updates when it opens</td>
-                <td>Limited technical data in the update check, such as IP address, app project, update channel, runtime version and platform. No account or group content.</td>
+                <td>Builds the app, checks for app updates when it opens, and can show the operator update statistics</td>
+                <td>The update check's IP address and standard network headers; the app project, Android platform, app runtime version, update channel and update-protocol details; a random identifier stored for this installation of the app; and, when available, which built-in or downloaded version is running. It can also carry details an earlier Expo response asked for. After a failed start it can include the identifiers of updates that failed to launch and up to 1,024 characters of recorded technical error text. Iron does not add account or group content.</td>
                 <td>May include the United States and other countries</td>
               </tr>
               <tr>
@@ -210,17 +210,19 @@
 
       <section id="retention">
         <h2>Keeping and deleting data</h2>
-        <p>We keep your account data, reflections, Amens and preferences while your account exists. Group data, such as the schedule and prayer point, is kept while the group is active.</p>
+        <p>We keep your account data while your account exists, and your reflections, Amens and preferences while your account exists or until you withdraw your consent. Group data, such as the schedule and prayer point, is kept while the group is active.</p>
         <p>There is no button to delete a single reflection. You can edit a reflection, make it private, or remove your own Amen at any time.</p>
         <p>You can ask us to delete your account and its data. <a href="delete-account.html">Read how account deletion works</a>.</p>
         <p>Service-provider backups, if any, may keep temporary copies until their normal expiry. Iron will not restore an older backup unless completed deletion requests can be reapplied. That means every deletion made since that backup can be identified and reapplied, including deletions requested by email and handled by hand. If that complete set of deletions cannot be established, the restore stays blocked.</p>
         <p>Iron keeps a small number of administrative records, such as when a member was approved or removed, and records of completed account deletions. They contain identifiers and times only, never reflection or prayer wording. Administrative audit records become eligible for a daily automatic purge once they are more than 12 months old. For a deletion completed with the account holder as the acting user, the audit record can keep that user's pseudonymous user ID until it becomes eligible for the daily automatic purge after 12 months. A deletion handled by hand may be recorded differently. Records of a deletion attempt that failed before the account was deleted become eligible for a daily automatic purge after 7 days. Records of completed account deletions, and of deletions where the account was deleted but the record is not yet marked complete, become eligible for a daily automatic purge after 35 days. Records of a deletion still pending are never purged automatically; the operator completes or resolves them.</p>
-        <p>Your community rules acceptance is deleted with your account. A report is deleted when the account that sent it or the group is deleted, and when the reported account, reflection or schedule is deleted. Otherwise, reports are not deleted on a schedule, so at present they are kept.</p>
+        <p>Your community rules acceptance is deleted with your account. If you withdraw your consent or your account is deleted, a report you sent that is still being reviewed stays for review, no longer linked to your account, and your other reports are deleted. A report is deleted when its group is deleted, and when the reported account, reflection or schedule is deleted. Otherwise, reports are not deleted on a schedule, so at present they are kept.</p>
       </section>
 
       <section id="rights">
         <h2>Your rights</h2>
-        <p>You can ask to access, correct, receive a copy of, or delete your data. Where applicable, you can also ask us to restrict or stop processing, or withdraw your consent. Withdrawing consent does not undo earlier lawful processing. Because group features depend on consent, withdrawing it may mean leaving your groups or deleting your account.</p>
+        <p>You can ask to access, correct, receive a copy of, or delete your data. Where applicable, you can also ask us to restrict or stop processing.</p>
+        <p>You can withdraw your consent at any time in the app, under Account, Withdraw privacy consent, without deleting your account and without first giving any newer consent Iron asks for. Withdrawing removes you from your groups, cancels any join request, and deletes your reflections, Amen responses and reminder setting. A safety report you made that is still being reviewed stays for review, no longer linked to your account; your other safety reports are deleted. Iron stops its daily reminder on the device you withdraw from, and on another device the next time that device connects to Iron. Your account, your consent history, a record of the withdrawal and your community rules acceptance stay until you ask for your account to be deleted. Iron also keeps a technical record of each withdrawal request: a random request identifier, its outcome and when it was decided. A request record more than eight days old may be deleted when you next withdraw or when the app checks the result of a different request; otherwise it stays until your account is deleted, and all of them are deleted with it. If a record of a completed withdrawal is deleted this way, Iron keeps a marker holding only your account identifier until your account is deleted. These records contain no reflection, prayer or reading content. If no other leader of a group you lead has given current consent, pass leadership to a member who has, or close the group, first. Group content you wrote as a leader stays with the group, and reports other people made and administrative records (identifiers and times only) are kept as described in this policy. Withdrawing does not undo earlier lawful processing, and you can consent again later.</p>
+        <p>While your consent is not current, for example after Iron asks you to consent again, you cannot see or add to your groups, other members do not see you, your shared reflections or your Amens, and Iron stops your reminder. Not consenting again deletes nothing by itself: when you consent again, you regain access to your memberships and content that still exist. While you decide, a leader can still ask Iron to remove you from their group, and a group can still be closed. You can also withdraw, which deletes it, or ask for your account to be deleted. Iron cannot remove what the app is already showing on a device that is offline; the app stops showing it when that device next connects to Iron or the app is restarted.</p>
         <p>You can get a copy of your own reflections and Amens yourself in the app under Account, <strong>Get a copy of my data</strong>. It does not include other people's content, your community rules acceptance or reports you sent. You can ask for a copy of those by email.</p>
         <p>To make any other request, email us from the address linked to your account. We verify requests using that address and answer without undue delay, normally within one month. We will not ask for identity documents unless it is genuinely necessary.</p>
         <p>You may also be able to complain to a data protection supervisory authority where you live.</p>
